@@ -29,23 +29,3 @@ You can do this from the selector at bottom of screen or using the Python: Selec
 
 Once selected some prompts may appear regarding pylint, this is useful but not necessary just highlights good practises with python code
 
-Also useful is adding the a script to run the main program in your launch.json file, this can be done from the debug menu and using the cog icon once open adding the following will allow you to use the Run Hub script
-
-{
-			"name": "Python: Run Hub",
-			"type": "python",
-			"request": "launch",
-			"stopOnEntry": true,
-			"pythonPath": "${config:python.pythonPath}",
-			"program": "C:/Workspaces/Python/hub/hub.py",
-			"cwd": "${workspaceFolder}",
-			"env": {},
-			"envFile": "${workspaceFolder}/.env",
-			"debugOptions": [
-				"RedirectOutput"
-			]
-		},
-
-
-
-
